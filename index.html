@@ -36,9 +36,9 @@
             list-style: none;
         }
         .bullet-points ul li {
-    font-size: 30px;
+            font-size: 30px;
         }
-         .text {
+        .text {
             text-align: center;
             color: white;
             font-size: 20px;
@@ -61,13 +61,22 @@
         .outlined-icon {
             border: 10px solid black;
         }
-         #moving-image {
+        #moving-image {
             position: fixed;
             width: 100px;
             height: 100px;
         }
+        .coming-soon {
+            position: absolute;
+            width: 60%;
+            max-width: 800px; /* Ensure it doesn't get too large */
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     </style>
-     <script>
+    <script>
         window.onload = function() {
             var img = document.getElementById('moving-image');
             var speed = 2;
@@ -99,10 +108,11 @@
     </script>
 </head>
 <body>
-        <a href="https://site421820.nicepage.io/">
+    <a href="https://site421820.nicepage.io/">
         <img id="moving-image" src="pepecan.png">
     </a>
     <div class="bg"></div>
+    <img src="comingsoon.png" alt="Coming Soon" class="coming-soon">
     <div class="bullet-points">
         <ul>
             <li>✅Contract Renounced</li>
@@ -113,23 +123,23 @@
             <li>✅LIQUIDITY IS LOCKED</li>
         </ul>
     </div>
-        <div class="text">
+    <div class="text">
         Diet Pepe - we don't try hard, so you have to
     </div>
     <div class="icons">
-        <a href="https://app.camelot.exchange/?token2=0x1622c592927d2eb7dd3f5891d4e3f10ba08eeb13" target="_blank">
+        <a href="https://dexscreener.com" target="_blank">
             <img src="buy-icon.png" alt="Buy" class="outlined-icon">
         </a>
-        <a href="https://t.me/DietPepe" target="_blank">
+        <a href="https://t.me/" target="_blank">
             <img src="telegram-icon.png" alt="Telegram" class="outlined-icon">
         </a>
-        <a href="https://twitter.com/dietpepecoin" target="_blank">
+        <a href="https://x.com/" target="_blank">
             <img src="twitter-icon.png" alt="Twitter" class="outlined-icon">
         </a>
-        <a href="https://dexscreener.com/arbitrum/0x1622c592927D2eB7DD3f5891D4e3f10BA08eeb13" target="_blank">
+        <a href="https://dexscreener.com" target="_blank">
             <img src="chart guy.png" alt="Chart" class="outlined-icon">
         </a>
-        <a href="https://medium.com/@DietPepe" target="_blank">
+        <a href="https://yahoo.com" target="_blank">
             <img src="medium.png" alt="Chart" class="outlined-icon">
         </a>
     </div>
